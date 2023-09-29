@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoofTech - @ViewData["Title"]</title>
+
+    <meta name="description" content="Rooftech has revolutionized the roofing industry with its path-breaking self supported steel roofing solution." />
+    <meta name="keywords" content="RoofTech, Steel Roof, Roof Company, Self Supported Steel RoofTech System India, Fastest RoofTech" />
+    <meta name="abstract" content="RoofTech, Steel Roof, Roof Company, Self Supported Steel RoofTech System India, Fastest RoofTech" />
+    <meta name="og:title" content="RoofTech | Steel Roof | Roof Company | Self Supported Steel RoofTech System India | Fastest RoofTech" />
+    <meta name="og:description" content="RoofTech company is a pioneer of Fastest Self Supported Steel RoofTech System in India. Rooftech is the only Steel Roof Company in India to offer comprehensive Self Supported Steel RoofTech solutions." />
+    <meta name="author" content="Mbproflex - Roof Company" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/favicon.ico">
+    <!-- Stylesheets -->
+
+    <link href="~/css/bootstrap.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
+    <!-- Responsive -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="~/css/sky-forms.css" rel="stylesheet">
+    <link href="~/css/responsive.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="~/projects/css/jquery.fancybox.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="~/css/tab.css" rel="stylesheet" />
+    <link href="~/css/sticky-popup.css" rel="stylesheet">
+    <!-- scroll top to bottom js start -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bottom-arrow.js"></script>
+</head>
+<body>
+    <div id="sidePanel" class="">
+        <div id="panelContent">
+            @await Html.PartialAsync("~/Views/Shared/_Inquiry.cshtml")
+        </div>
+        <div id="panelHandle"><span>Inquiry</span></div>
+    </div>
+
+    <div class="main-wrapper">
+        <!--  Preloader -->
+        <div id="loader-wrapper" class="loading">
+            <div class="loader-text" id="loader"><div class="circle"><img src="/images/logo.png" alt=""></div></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+
+        <header class="main-header transparent-header home-menu">
+            <!-- Header Top -->
+            <div class="header-top">
+                <div class="container clearfix">
+                    <div class="row">
+                        <!-- Top Left -->
+                        <div class="top-right">
+                            <ul class="clearfix">
+                                <!--<li><a href="#"><span class="flaticon-location"></span>  MB House, Ahmedabad.</a></li>-->
+                                <li><a href="tel: +91 93164 56429"><span class="flaticon-technology"></span> +91 93164 56429 </a></li>
+                                <li><a href="tel: +91 72020 22022"><span class="flaticon-technology"></span> +91 72020 22022 </a></li>
+                                <li><a href="mailto:sales@erooftech.com"><span class="flaticon-letter-1"></span> sales@erooftech.com</a></li>
+                            </ul>
+                        </div>
+                        <!-- Top Right -->
+                        <div class="top-left">
+                            <div class="social-links">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/RooftechRoofTechSolutions/" target="_blank"><i class="facebook fa fa-facebook"></i></a></li>
+
+                                    <li><a href="https://www.linkedin.com/company/13462423" target="_blank"><i class="google fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCkRPHx7bRNP8ltP6NYCuFhA" target="_blank"><i class="google fa fa-youtube-play"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Top End -->
+            <!-- Header Lower -->
+            <div class="lower-header transparent-slider">
+                <div class="container clearfix">
+                    <div class="row">
+                        <!--Outer Box-->
+                        <div class="outer-box">
+
+                            <!-- Logo -->
+                            <div class="logo">
+                                <a href="/home"><img src="../images/logo.png" alt="RoofTech Companies in India"></a>
+                            </div>
+
+                            <!-- Main Menu -->
+                            <nav class="main-menu">
+                                <div class="navbar-header">
+                                    <!-- Toggle Button -->
+                                    <button type="button" class="navbar-toggle home-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                                </div>
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation">
+                                        <li class="dropdown @(ViewBag.PageName == "Introduction" || ViewBag.PageName == "Group Companies" || ViewBag.PageName == "Expertise & Capabilities" || ViewBag.PageName == "Engineering"|| ViewBag.PageName == "Vision | Mission | Values | Purpose" || ViewBag.PageName == "Journey" || ViewBag.PageName == "Achievements" || ViewBag.PageName == "Management" || ViewBag.PageName == "Network"
+                                            ? "current" : "")">
+                                            <a href="#">About Us</a>
+                                            <ul>
+                                                <li class="dropdown">
+                                                    <a href="#" id="mob-bg-sec">Group</a>
+                                                    <ul>
+                                                        <li><a href="/AboutUs/GroupInroduction">Introduction</a></li>
+                                                        <li><a href="/AboutUs/GroupCompanies">Group Companies</a></li>
+                                                        <li><a href="/AboutUs/ExpertiseAndCapabilities">Expertise & Capabilities</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="#" id="mob-bg-sec">Rooftech</a>
+                                                    <ul>
+                                                        <li><a href="/AboutUs/RooftechInroduction">Introduction</a></li>
+                                                        <li><a href="/AboutUs/RooftechVisionMission">Vision | Mission | Values | Purpose</a></li>
+                                                        <li><a href="/AboutUs/RooftechJourney">Journey</a></li>
+                                                        <li><a href="/AboutUs/RooftechAchievements">Achievements</a></li>
+                                                        <li><a href="/AboutUs/RooftechTeam">Team</a></li>
+                                                        <li><a href="/AboutUs/RooftechNetwork">Network</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown @(ViewBag.PageName == "Rooftech Steel Buildings" || ViewBag.PageName == "HVLS Fans" || ViewBag.PageName == "Standing Seam Roof" || ViewBag.PageName == "Wind Driven Ventilators"|| ViewBag.PageName == "Skylights"
+                                            ? "current" : "")">
+                                            <a href="#">Product Offering</a>
+                                            <ul>
+                                                <li><a href="/ProductOffering/SteelBuildings">Rooftech Steel Buildings </a></li>
+                                                <li><a href="/ProductOffering/HVLS_fans">HVLS Fans </a></li>
+                                                <li><a href="/ProductOffering/standing_seam_roof">Standing Seam Roof</a></li>
+                                                <li><a href="/ProductOffering/wind_driven_ventilators">Wind Driven Ventilators</a></li>
+                                                <li><a href="/ProductOffering/skylights">Skylights</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown @(ViewBag.PageName == "Technology" || ViewBag.PageName == "Material" || ViewBag.PageName == "Product" || ViewBag.PageName == "Design and Drawing"|| ViewBag.PageName == "Installation"
+                                            ? "current" : "")">
+                                            <a href="#">RoofTech</a>
+                                            <ul>
+                                                <li><a href="/Roofing/technology">Technology</a></li>
+                                                <li><a href="/Roofing/material">Material</a></li>
+                                                <li><a href="/Roofing/product">Product</a></li>
+
+                                                <li><a href="/Roofing/design_and_drawing">Design and Drawing</a></li>
+                                                <li><a href="/Roofing/installation">Installation</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown @(ViewBag.PageName == "Applications" || ViewBag.PageName == "Versatility" || ViewBag.PageName == "Accessories"? "current" : "")">
+                                            <a href="#">Solutions</a>
+                                            <ul>
+                                                <li><a href="/Solutions/applications">Applications</a></li>
+                                                <li><a href="/Solutions/versatility">Versatility </a></li>
+                                                <li><a href="/Solutions/accessories">Accessories</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown  @(ViewBag.PageName == "Industry"? "current" : "")">
+                                            <a href="#">Projects</a>
+                                            <ul>
+                                                <li><a href="/Project/industry">Industry </a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown @(ViewBag.PageName == "Videos" || ViewBag.PageName == "Print Advertisement" || ViewBag.PageName == "Event / Exhibition Photos" || ViewBag.PageName == "Brochures / Catalogues / Leaflets"|| ViewBag.PageName == "Backgrounder"|| ViewBag.PageName == "RoofTech Backgrounder"|| ViewBag.PageName == "Testimonials"|| ViewBag.PageName == "Life at RoofTech"? "current" : "")">
+                                            <a href="#">Gallery</a>
+                                            <ul>
+                                                <li><a href="/Gallery/Videos">Videos </a></li>
+                                                @*<li><a href="/Gallery/PrintAdvertisement">Print Advertisement</a></li>*@
+                                                <li><a href="/Gallery/eventexhibitionphotos">Event / Exhibition Photos</a></li>
+                                                <li><a href="/Gallery/Brochures">Brochures / Catalogues / Leaflets</a></li>
+                                                <li><a href="/Gallery/MbBackgrounder">Backgrounder</a></li>
+                                                <li><a href="/Gallery/RooftechBackgrounder">RoofTech Backgrounder</a></li>
+                                                <li><a href="/Gallery/lifeatRooftech">Life at RoofTech</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class=" @(ViewBag.PageName == "Contact Us"|| ViewBag.PageName == "Thank you"? "current" : "")"><a href="/ContactUs">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        @RenderBody()
+
+        <!-- Start Foter Section -->
+        <footer class="footer-section">
+            <div class="footer-area">
+                <div class="container">
+                    <div class="row sokal-sm">
+                        <!-- footer widget -->
+                        <div class="col-md-3 col-sm-6 footer1">
+                            <div class="footer-widget">
+                                <h4>Rooftech</h4>
+                                <div class="footer-service-item">
+                                    <ul>
+                                        <li class="footer-single-item"><a href="/AboutUs/RooftechInroduction">Introduction</a></li>
+                                        <li class="footer-single-item"><a href="/AboutUs/RooftechJourney">Journey</a></li>
+                                        <li class="footer-single-item"><a href="/AboutUs/Achievements">Achievements</a></li>
+                                        <li class="footer-single-item"><a href="/AboutUs/Careers">Careers </a></li>
+                                    </ul>
+                                </div>
+                                <div class="fb-like" data-href="https://www.facebook.com/RooftechRoofTechSolutions/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+                            </div>
+                        </div>
+                        <!-- ending footer widget -->
+                        <!-- footer widget -->
+                        <div class="col-md-3 col-sm-6 footer2">
+                            <div class="footer-widget">
+                                <h4>Group</h4>
+                                <div class="footer-service-item">
+                                    <ul>
+                                        <li class="footer-single-item"><a href="/AboutUs/MandBGroupInroduction">Introduction</a></li>
+                                        <li class="footer-single-item"><a href="/AboutUs/MandBGroupCompanies">Group Companies</a></li>
+                                        <li class="footer-single-item"><a href="/AboutUs/ExpertiseAndCapabilities">Expertise & Capabilities</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- ending footer widget -->
+                        <!-- footer widget -->
+                        <div class="col-md-3 col-sm-6 footer3">
+                            <div class="footer-widget">
+                                <h4>Corporate Office</h4>
+                                <div class="footer-service-item">
+                                    <p style="margin-bottom:5px;">
+                                        <i class="fa fa-map-marker"></i> Rooftech Solutions<br/>
+                                        <span class="footer-left-padding"></span>7, Shreeji Complex, <br>
+                                        <span class="footer-left-padding"></span>Nr Hirabaug, Varachha Road, <br>
+                                        <span class="footer-left-padding"></span>Surat - 395 006,<br>  <span class="footer-left-padding"></span>Gujrat, India.
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-mobile"></i><a href="tel: +91 7202022022" title="Sales Enquiry" style="color:#fff"> &nbsp; +91 72020 22022</a><br>
+                                        <i class="fa fa-mobile"></i><a href="tel: +91 9316456429" title="Sales Enquiry" style="color:#fff"> &nbsp; +91 93164 56429</a><br>
+
+                                        <i class="fa fa-envelope"></i> <a href="mailto:sales@eroofteh.com"><span style="color:#fff;">sales@eroofteh.com</span></a> <br>
+                                        <i class="fa fa-envelope"></i> <a href="mailto:rooftech31@gmail.com"><span style="color:#fff;">rooftech31@gmail.com</span></a> <br>
+
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ending footer widget -->
+                        <!-- footer widget -->
+                        <div class="col-md-3 col-sm-6 footer4">
+                            <div class="footer-subscription footer-widget ">
+                                <h4>Quick Inquiry</h4>
+                                @*<form action="http://www.mbproflex.com/quick_inquiry.php" class="contact-form form-group" id="" method="post">
+                                        <div class="col-sm-12 new_form_style col-xs-12">
+                                            <input class="form-control" id="i_name" type="text" name="i_name" placeholder="Name">
+                                        </div>
+                                        <div class="col-sm-12 new_form_style col-xs-12">
+                                            <input class="form-control" id="i_email" type="text" name="i_email" placeholder="Email">
+                                        </div>
+                                        <div class="col-md-12 new_form_style col-sm-12 col-xs-12">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Message"></textarea>
+                                            <button type="submit" class=" btn btn-default contact-submit-button footer-btn" onClick="return valid_quick_inquiry();"> <span class="red"><i class="fa fa-envelope msg-footer-btn"></i> Send</span> </button>
+                                        </div>
+                                    </form>*@
+                                @await Html.PartialAsync("~/Views/Shared/_QuickInquiry.cshtml")
+                            </div>
+
+                        </div>
+                        <!-- ending footer widget -->
+                    </div>
+                </div>
+            </div>
+
+            <!--Footer bootom-->
+            <div class="footer-bottom">
+                <div class="container border-top-footer"> <span>&copy; <span class="currentyear"></span> Rooftech. All rights reserved | <a title="Designed By 3m Technology" href="http://3m-technology.com/" target="_blank" class="compubrain">3M Technology</a></span> </div>
+            </div>
+        </footer>
+        <!-- End Footer Section -->
+        <!-- Bottom to top -->
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.js"></script>
+    <script src="~/js/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/js/modernizr.js"></script>
+    <link rel="stylesheet" href="~/css/bottom-top.css">
+    <!-- end -->
+
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/revolution.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.counterup.min.js"></script>
+    <script src="~/js/waypoint.js"></script>
+    <script src="~/js/jquery.flexslider-min.js"></script>
+    <script src="~/js/jquery.mixitup.min.js"></script>
+    <script src="~/js/wow.js"></script>
+    <script src="~/js/script.js"></script>
+    <!-- Accordation-->
+    <script src="~/js/jquery.easyResponsiveTabs.js"></script>
+    <script src="~/js/tab.js"></script>
+    <!-- end -->
+    <script type="text/javascript" src="~/projects/js/jquery.fancybox.js"></script>
+    <script src="../projects/js/home-page.js"></script>
+    <script src="~/js/sticky-popup.js"></script>
+    <script src="~/js/smoothscroll.js"></script>
+    <script src="~/js/validation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        $(window).load(function () {
+            $("body").addClass("loaded");
+        });
+
+        AOS.init({
+            duration: 1200,
+        })
+        $("a.view-img").fancybox({
+		});
+
+    </script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+.cr/
+.vs/
+/RoofTech/.vs/RoofTech/v16
+/RoofTech/RoofTech/bin/Debug/netcoreapp2.2
+/RoofTech/RoofTech/obj
+/.vs/Dharmesh Mokani/v16
+/.vs/VSWorkspaceState.json
+/RoofTech/.vs/RoofTech/v15

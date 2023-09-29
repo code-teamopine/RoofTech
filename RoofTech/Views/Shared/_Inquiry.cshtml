@@ -1,0 +1,23 @@
+﻿@model RoofTech.Models.EmailModel
+
+<form asp-action="Inquiry" asp-controller="Home" method="post" name="product_enquiry">
+    @Html.TextBoxFor(m => m.Name, new { placeholder = "Your Name*", @class = "inpt" })
+    @Html.ValidationMessageFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Email, new { placeholder = "Your Email*", @class = "inpt" })
+    @Html.ValidationMessageFor(m => m.Email)
+    @Html.TextBoxFor(m => m.Phone, new { placeholder = "Your Mobile No*", @class = "inpt" })
+    @Html.ValidationMessageFor(m => m.Phone)
+    @Html.TextBoxFor(m => m.City, new { placeholder = "Your City", @class = "inpt" })
+    @Html.ValidationMessageFor(m => m.City)
+    <select id="ProductOffering" name="ProductOffering">
+        <option value="" selected disabled>- Product Offering* -</option>
+        <option value="HVLS Fans">HVLS Fans </option>
+        <option value="Standing Seam Roof">Standing Seam Roof </option>
+        <option value="Ventilator">Wind Driven Ventilators </option>
+        <option value="Skylights">Skylights</option>
+        <!--<option value="Hybrid RoofTech">Hybrid RoofTech</option>-->
+        <option value="Self Supported Steel RoofTech">Self Supported Steel RoofTech</option>
+    </select>
+    @Html.ValidationMessageFor(m => m.ProductOffering)
+    <input type="submit" value="Submit" id="fsc-submit-7">
+</form>

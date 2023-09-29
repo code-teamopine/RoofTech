@@ -1,0 +1,96 @@
+﻿@model RoofTech.Models.EmailModel
+@{
+    ViewData["Title"] = "Innovative Roofing Solutions | Roofing System | Curved Roofing | Trussless Roofing | Leak Proof Roofing | Galvalume Metal Roofing | Corrugated Metal Roofing | Steel Roofing | Factory Roofing | Metal Roofing | Industrial Roofing";
+}
+
+<!-- Start Header Area background -->
+
+
+<div id="inner-header">
+    <img src="../images/inner_banner/download.jpg"> <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pages-header-content text-center">
+
+
+                    <div class="breadcum">
+                        <ul>
+                            <li><a href="index-2.html">Home</a></li>
+                            <li><a href="#">Download Catalogue</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Header Area background  -->
+<!-- Start Service Details Goes Here -->
+<section id="contact-section-form" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+                &nbsp;
+            </div>
+            <!--<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+                <strong><center>Request you to kindly fill all the required details for Catalogue</center></strong>
+                <form action="#" class="contact-form form-group" id="ajax-contact" method="post">
+                    <p><input class="form-control" id="name" type="text" name="name" placeholder="Name*" required></p>
+                    <p><input class="form-control" id="email" type="text" name="email" placeholder="Email*" required></p>
+                    <p><input class="form-control" id="phone" type="text" name="phone" placeholder="Phone No.*" required></p>
+
+                    <button type="submit" class="contact-submit-button">
+                        <span>Send</span>
+                    </button><br>
+                   <div id="form-messages"></div>
+                </form>
+            </div>-->
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 animated wow fadeInLeftBig" data-wow-delay=".4s">
+                <strong><center>Request you to kindly fill all the required details for <span class="red-text"><!--?php echo $_GET['pro']; ?--> Brochure</span> </center></strong>
+                    <form asp-action="Inquiry" asp-controller="Home" method="post" name="contactForm" class="sky-form">
+                        <fieldset>
+                            @*@Html.HiddenFor(m => m.IsDownloadBrochure, new { Value = true })*@
+                            @*<hidden id="IsDownloadBrochure" name="IsDownloadBrochure" value="True"></hidden>*@
+                            @Html.CheckBoxFor(m => m.IsDownloadBrochure, new { @class="hidden", @checked = "checked" })
+                            <section>
+
+                                <label class="input">
+                                    <i class="icon-append fa fa-user"></i>
+                                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Name*" })
+                                    @Html.ValidationMessageFor(m => m.Name)
+                                </label>
+                            </section>
+                            <section>
+
+                                <label class="input">
+                                    <i class="icon-append fa fa-envelope-o"></i>
+                                    @Html.TextBoxFor(m => m.Email, new { placeholder = "Email*" })
+                                    @Html.ValidationMessageFor(m => m.Email)
+                                </label>
+                            </section>
+
+                            <section>
+
+                                <label class="input">
+                                    <i class="icon-append fa fa-phone"></i>
+                                    @Html.TextBoxFor(m => m.Phone, new { placeholder = "Phone No*" })
+                                    @Html.ValidationMessageFor(m => m.Phone)
+                                </label>
+                            </section>
+
+                        </fieldset>
+                        <button type="submit" class="contact-submit-button">
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+                &nbsp;
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- End Service Details Goes Here --> 

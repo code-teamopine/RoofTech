@@ -1,0 +1,1 @@
+var $=jQuery.noConflict();$(document).ready(function(o){"use strict";var t=o(".go-bottom"),n=o("html, body");t.click(function(){return n.animate({scrollTop:680},"slow"),!1})});

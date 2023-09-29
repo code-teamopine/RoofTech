@@ -1,0 +1,127 @@
+﻿@model RoofTech.Models.EmailModel
+@{
+    ViewData["Title"] = "Roofing | Roofing Companies | Fastest Roofing | Metal Roofing | Steel Roofing | Industrial Roofing | Factory Roofing | Warehouse Roofing";
+    ViewData["PageName"] = "Contact Us";
+
+}
+
+<!-- Start Header Area background -->
+<div class="contact-us-page">
+
+
+    <div id="inner-header">
+        <img src="images/inner_banner/contactus.jpg"> <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pages-header-content text-center">
+
+
+                        <div class="breadcum">
+                            <ul>
+                                <li><a href="/home">Home</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Header Area background  -->
+    <!-- Contact-content -->
+
+    <section id="contact-section-form" class="section-padding">
+        <div class="container">
+            <div class="row contact-sec">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padd-hor-60">
+                    <form asp-action="Inquiry" asp-controller="Home" method="post" name="contactForm" class="sky-form">
+                        @*<form action="/ContactUs/SendEmail" data-ajax="true" data-ajax-begin="formContactUsBegin" data-ajax-complete="formContactUsComplete" data-ajax-failure="formContactUsFailure" data-ajax-method="Post" data-ajax-success="formContactUsSuccess" method="post" novalidate="novalidate" name="contactForm" class="sky-form">*@
+                            <fieldset>
+                                <div class="row">
+                                    <section>
+
+                                        <label class="input">
+                                            <i class="icon-append fa fa-user"></i>
+                                            @Html.TextBoxFor(m => m.Name, new { placeholder = "Name*" })
+                                            @Html.ValidationMessageFor(m => m.Name)
+                                        </label>
+                                    </section>
+                                    <section>
+
+                                        <label class="input">
+                                            <i class="icon-append fa fa-envelope-o"></i>
+                                            @Html.TextBoxFor(m => m.Email, new { placeholder = "Email*" })
+                                            @Html.ValidationMessageFor(m => m.Email)
+                                        </label>
+                                    </section>
+
+                                    <section>
+
+                                        <label class="input">
+                                            <i class="icon-append fa fa-phone"></i>
+                                            @Html.TextBoxFor(m => m.Phone, new { placeholder = "Phone*" })
+                                            @Html.ValidationMessageFor(m => m.Phone)
+                                        </label>
+                                    </section>
+
+                                    <section>
+
+                                        <label class="input">
+                                            <i class="icon-append fa fa-comment"></i>
+                                            @Html.TextAreaFor(m => m.Message, new { placeholder = "Message" })
+                                            @Html.ValidationMessageFor(m => m.Message)
+                                        </label>
+                                    </section>
+                                </div>
+                            </fieldset>
+                            <button type="submit" class="contact-submit-button">
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 mar-b-xs mob-sec-div1 add1">
+                    <div class="blog-post style2 active more-btn-white">
+
+                        <h3 class="text-capitalize">Corporate Office</h3>
+                        <p style="margin-bottom:5px;">
+                            <i class="fa fa-map-marker"></i> Rooftech Solutions<br />
+                            <span class="footer-left-padding"></span>7, Shreeji Complex, <br>
+                            <span class="footer-left-padding"></span>Nr Hirabaug, Varachha Road, <br>
+                            <span class="footer-left-padding"></span>Surat - 395 006,<br>  <span class="footer-left-padding"></span>Gujrat, India.
+                        </p>
+                        <i class="fa fa-mobile"></i><a href="tel: +91 7202022022" title="Sales Enquiry" style="color:#444;z-index:999;position:relative"> &nbsp; +91 72020 22022</a><br>
+                        <i class="fa fa-mobile"></i><a href="tel: +91 9316456429" title="Sales Enquiry" style="color:#444;z-index:999;position:relative"> &nbsp; +91 93164 56429</a><br>
+
+                        <i class="fa fa-envelope"></i> <a href="mailto:sales@erooftech.com" style="color:#444;z-index:999;position:relative">sales@erooftech.com</a> <br>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </section> <!-- /#contact-content -->
+</div>
+
+@section Scripts  {
+    
+<script>
+    function formContactUsBegin() {
+    //showLoader($('#frmContactUs'));
+}
+
+function formContactUsComplete() {
+    //hideLoader($('#frmContactUs'));
+}
+
+function formContactUsSuccess(data) {
+    window.location = "/ContactUs/ThankYou";
+    //showAlert(data);
+}
+
+function formContactUsFailure() {
+    //showErrorAlert();
+}
+</script>
+}
